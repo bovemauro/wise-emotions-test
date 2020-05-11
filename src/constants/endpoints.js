@@ -1,0 +1,1 @@
+export const GET_ACCESS_TOKEN = 'v2/oauth2/token';

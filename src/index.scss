@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Baloo-Regular';
+  src: url('./assets/fonts/Baloo_2/Baloo2-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Baloo-Bold';
+  src: url('./assets/fonts/Baloo_2/Baloo2-Bold.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: 'Baloo-Regular', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
