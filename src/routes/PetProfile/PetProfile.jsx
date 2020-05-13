@@ -4,8 +4,18 @@ import './PetProfile.scss';
 import { Button } from '@material-ui/core';
 
 function PetProfile(props) {
-  const { photos = [], name, breeds, gender, contact: { address } } = props.location.state.data;
-const builtAddress = <h2>{address.city}, {address.state}</h2>
+  const {
+    photos = [],
+    name,
+    breeds,
+    gender,
+    contact: { address },
+  } = props.location.state.data;
+  const builtAddress = (
+    <h2>
+      {address.city}, {address.state}
+    </h2>
+  );
 
   console.log(props.location.state.data);
 
@@ -30,7 +40,9 @@ const builtAddress = <h2>{address.city}, {address.state}</h2>
           <h1>{name}</h1>
           {builtAddress}
           <hr />
-          <h3>{breeds.primary} - {gender}</h3>
+          <h3>
+            {breeds.primary} - {gender}
+          </h3>
         </div>
       </div>
     </div>

@@ -13,7 +13,9 @@ function PetCardSkeleton() {
     <div className="petCard">
       <div className="petCard__imagePlaceholder">{skeleton}</div>
       <div className="petCard__name petCard__name____skeleton">{skeleton}</div>
-      <div className="petCard__footer petCard__footer____skeleton">{skeleton}</div>
+      <div className="petCard__footer petCard__footer____skeleton">
+        {skeleton}
+      </div>
     </div>
   );
 }

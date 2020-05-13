@@ -11,7 +11,7 @@ function PetCard(props) {
 
   /**
    * Go to pet profile page
-   * @param {object} petData 
+   * @param {object} petData
    */
   const goToProfile = ({ petData }) => {
     history.push({
@@ -25,10 +25,7 @@ function PetCard(props) {
   return (
     <div className="petCard">
       {!isNilOrEmpty(data.primary_photo_cropped) ? (
-        <img 
-          src={data.primary_photo_cropped.medium} 
-          alt="pet name" 
-        />
+        <img src={data.primary_photo_cropped.medium} alt="pet name" />
       ) : (
         <div className="petCard__imagePlaceholder" />
       )}

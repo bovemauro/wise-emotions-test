@@ -2,7 +2,7 @@
 
 First step: install all dependencies
 ```
-yarn install
+npm install
 ```
 Second step: run application
 ```

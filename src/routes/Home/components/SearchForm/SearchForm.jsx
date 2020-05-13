@@ -44,7 +44,6 @@ function Home() {
             { value: 'los-angeles, ca', label: 'Los Angeles, CA' },
             { value: 'miami, fl', label: 'Miami, FL' },
             { value: 'detroit, mi', label: 'Detroit, MI' },
-            
           ]}
           getOptionLabel={(option) => option.label}
           renderInput={(params) => (
