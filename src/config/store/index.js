@@ -2,9 +2,11 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import reducers from './reducers';
 import { createLogicMiddleware } from 'redux-logic';
 import appLogic from '../../ducks/logic';
+import searchPageLogic from '../../routes/SearchPage/ducks/logic';
 
 const logicMiddleware = createLogicMiddleware([
   ...appLogic,
+  ...searchPageLogic,
 ]);
 
 const enhancer = compose(

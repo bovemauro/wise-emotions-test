@@ -1,12 +1,15 @@
 import axios from 'axios';
 
 function API() {
+  const token = localStorage.getItem('access_token');
+
+  // manage missing token
+
   const axiosClient = axios.create({
-    baseURL: 'https://api.petfinder.com',
     timeout: 60000,
     headers: {
       'Content-Type': 'application/json',
-      // Authorization: `Bearer ${token}`,
+      Authorization: `Bearer ${token}`,
     },
   });
 

@@ -1,0 +1,41 @@
+$imageHeight: 150px;
+
+.petCard {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  &__imagePlaceholder {
+    width: 100%;
+    height: $imageHeight;
+    background-color: #c4c4c4;
+  }
+  & > img {
+    width: 100%;
+    height: $imageHeight;
+    object-fit: cover;
+  }
+  &__name {
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Baloo-Bold';
+  }
+  &__footer {
+    height: 50px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-transform: uppercase;
+  }
+}

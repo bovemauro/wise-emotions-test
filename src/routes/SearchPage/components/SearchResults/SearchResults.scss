@@ -1,0 +1,13 @@
+.searchResults {
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  display: grid;
+  padding: 100px 30px 60px;
+  box-sizing: border-box;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

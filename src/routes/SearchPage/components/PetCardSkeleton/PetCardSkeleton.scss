@@ -1,0 +1,29 @@
+.petCard__imagePlaceholder {
+  & > div {
+    height: 100%;
+    margin-top: -5px;
+    & > span > span {
+      height: 100%;
+    }
+  }
+}
+.petCard__name {
+  &____skeleton {
+    padding: 0 20px;
+    & > div {
+      width: 100%;
+    }
+  }
+}
+.petCard__footer {
+  &____skeleton {
+    padding: 0 20px 20px;
+    box-sizing: border-box;
+    & > div {
+      width: 100%;
+      & > span > span {
+        height: 45px;
+      }
+    }
+  }
+}
